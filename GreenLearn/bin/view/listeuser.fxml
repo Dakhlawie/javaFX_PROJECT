@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="773.0" prefWidth="1117.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.listeuserController">
+   <children>
+      <Pane layoutX="-7.0" prefHeight="773.0" prefWidth="316.0" style="-fx-background-color: #008000;">
+         <children>
+            <Pane prefHeight="181.0" prefWidth="316.0" style="-fx-background-color: #008000;">
+               <children>
+                  <Text fill="WHITE" layoutX="61.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GreenSubmit">
+                     <font>
+                        <Font name="MS PGothic" size="27.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <HBox layoutY="369.0" prefHeight="51.0" prefWidth="316.0" style="-fx-background-color: #8B008B;" />
+            <JFXButton layoutX="-4.0" layoutY="368.0" prefHeight="57.0" prefWidth="323.0" style="-fx-background-color: #003300;" text="Utilisateur" textFill="#fcf5f5">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnajouter1" layoutX="3.0" layoutY="251.0" onAction="#Actajouter" prefHeight="49.0" prefWidth="295.0" text="Ajouter Rapport" textFill="#fcf5f5">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="34.0">
+                     <image>
+                        <Image url="@photos/add-new-file.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnrapport" layoutX="9.0" layoutY="200.0" onAction="#ActRapport" prefHeight="51.0" prefWidth="309.0" text="Rapport" textFill="#fcf5f5">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="tlogout" layoutX="1.0" layoutY="675.0" onAction="#Actlogout" prefHeight="49.0" prefWidth="309.0" text="Logout" textFill="#fcf5f5">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <FontAwesomeIcon iconName="USERS" layoutX="65.0" layoutY="403.0" size="22px" />
+            <ImageView fitHeight="37.0" fitWidth="35.0" layoutX="48.0" layoutY="214.0">
+               <image>
+                  <Image url="@photos/document.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <HBox layoutX="308.0" layoutY="47.0" prefHeight="100.0" prefWidth="810.0" style="-fx-background-color: #003300;" />
+      <ImageView layoutX="331.0" layoutY="26.0">
+         <image>
+            <Image url="@photos/user.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnchercher" layoutX="695.0" layoutY="295.0" mnemonicParsing="false" onAction="#Actchercher" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #008000;" text="Chercher" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tcherche" layoutX="387.0" layoutY="292.0" prefHeight="27.0" prefWidth="282.0" promptText="chercher un utilisateur" style="-fx-background-color: transparant; -fx-border-color: #008000; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font size="19.0" />
+         </font></TextField>
+      <ImageView fitHeight="36.0" fitWidth="33.0" layoutX="806.0" layoutY="296.0">
+         <image>
+            <Image url="@photos/search.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnconsulter" layoutX="872.0" layoutY="295.0" mnemonicParsing="false" onAction="#Actconsulter" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #008000;" text="Lister tous" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="351.0" layoutY="372.0" prefHeight="368.0" prefWidth="724.0">
+         <columns>
+            <TableColumn fx:id="colid" prefWidth="167.0" text="ID " />
+            <TableColumn fx:id="colnom" minWidth="0.0" prefWidth="291.20001220703125" text="Nom_Prenom" />
+            <TableColumn fx:id="colpassword" prefWidth="264.79998779296875" text="Mot de passe" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="btnajouter1" layoutX="-3.0" layoutY="454.0" onAction="#Actajouteruser" prefHeight="51.0" prefWidth="309.0" text="Ajouter Utilisateur" textFill="#fcf5f5">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="30.0" fitWidth="32.0" layoutX="33.0" layoutY="465.0">
+         <image>
+            <Image url="@../../../mini-projet/src/view/photos/—Pngtree—vector%20add%20user%20icon_4101420.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

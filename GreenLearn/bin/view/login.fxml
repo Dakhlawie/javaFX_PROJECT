@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="673.0" prefWidth="1012.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.logincontroller">
+   <children>
+      <AnchorPane layoutY="8.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane layoutY="-13.0" prefHeight="681.0" prefWidth="426.0" style="-fx-background-color: #008000;">
+               <children>
+                  <Text fill="WHITE" layoutX="76.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GreenSubmit" wrappingWidth="206.62188720703125">
+                     <font>
+                        <Font name="MS PGothic" size="36.0" />
+                     </font>
+                  </Text>
+                 
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="425.0" prefHeight="674.0" prefWidth="602.0">
+         <children>
+            <PasswordField fx:id="tpassword" layoutX="218.0" layoutY="345.0" prefHeight="25.0" prefWidth="215.0" promptText="Passe word" style="-fx-background-color: transparant; -fx-border-color: #008000; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="tusername" layoutX="218.0" layoutY="244.0" prefHeight="25.0" prefWidth="215.0" promptText="user name" style="-fx-background-color: transparant; -fx-border-color: #008000; -fx-border-width: 0px 0px 2px 0px;" />
+            <FontAwesomeIcon fill="#008000" iconName="USER" layoutX="174.0" layoutY="266.0" size="2em" wrappingWidth="12.0" />
+            <FontAwesomeIcon fill="#008000" iconName="KEY" layoutX="168.0" layoutY="379.0" size="2em" />
+            <Button fx:id="btnlogin" layoutX="240.0" layoutY="469.0" mnemonicParsing="false" onAction="#Actlogin" prefHeight="27.0" prefWidth="152.0" style="-fx-background-color: #008000;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Hyperlink layoutX="301.0" layoutY="382.0" prefHeight="23.0" prefWidth="182.0" text="Forgot your password ?" textFill="#ffa319" />
+            <FontAwesomeIcon fill="#008000" iconName="USERS" layoutX="295.0" layoutY="112.0" size="3em" />
+            <Text fill="GREEN" layoutX="280.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User login">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnsignup" layoutX="188.0" layoutY="550.0" mnemonicParsing="false" onAction="#ActSignup" prefHeight="50.0" prefWidth="253.0" style="-fx-background-color: #B7FFB5; -fx-background-radius: 5; -fx-text-fill: #008000; -fx-border-color: #008000;" text="Don't have an account? sign up" textFill="GREEN">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
